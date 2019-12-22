@@ -41,11 +41,11 @@ body {
   padding: 10px;
 }
 
-.column.side {
+.left, .right {
   width: 25%;
 }
 
-.column.middle {
+.middle {
   width: 50%;
 }
 
@@ -61,4 +61,16 @@ body {
   .column.side, .column.middle {
     width: 100%;
   }
+}
+
+td {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
 }
