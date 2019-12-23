@@ -1,3 +1,9 @@
+div {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
@@ -53,15 +59,18 @@ body {
   width: 50%;
 }
 .left-middle {
+  position: relative;
   width: 40%;
   vertical-align: middle;
 }
 .right-middle{
+  position: relative;
   width: 40%;
   vertical-align: bottom;
 }
 
 .row:after {
+  position: relative;
   content: "";
   display: table;
   clear: both;
@@ -94,7 +103,11 @@ li {
 }
 
 img.logo {
-  display: block;
+  position: absolute;
   width: 50%;
-  vertical-align: bottom;
+  top: 0;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  margin: auto;
 }
