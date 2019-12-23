@@ -52,6 +52,14 @@ body {
 .middle {
   width: 50%;
 }
+.left-middle {
+  width: 40%;
+  vertical-align: middle;
+}
+.right-middle{
+  width: 40%;
+  vertical-align: bottom;
+}
 
 .row:after {
   content: "";
@@ -62,8 +70,8 @@ body {
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
+  .column.left, .column.middle, .column.right {
+    width: 95%%;
   }
 }
 
@@ -85,7 +93,8 @@ li {
   font-size: 18px;
 }
 
-.logo {
-  width: 20%
-  height: 20%
+img.logo {
+  display: block;
+  width: 50%;
+  vertical-align: bottom;
 }
