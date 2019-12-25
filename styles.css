@@ -111,3 +111,13 @@ img.logo {
   right: 0;
   margin: auto;
 }
+
+img.logo2 {
+  position: absolute;
+  width: 35%;
+  top: 30%;
+  bottom: 0;
+  left: -15%;
+  right: 0;
+  margin: auto;
+}
