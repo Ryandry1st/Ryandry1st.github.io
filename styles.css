@@ -40,6 +40,7 @@ body {
   margin-right: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .column {
@@ -120,6 +121,10 @@ img.logo2 {
   left: -15%;
   right: 0;
   margin: auto;
+}
+
+img.homeimg {
+  width: 100%;
 }
 
 .fa-twitter-square {
