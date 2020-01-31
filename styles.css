@@ -59,6 +59,7 @@ body {
 
 .middle {
   width: 50%;
+  padding-right: 20px;
 }
 .left-middle {
   position: relative;
