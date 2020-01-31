@@ -31,6 +31,7 @@
        <li>4.0 GPA</li>
        <li>Supervised by Prof. Robert W Heath Jr. </li>
        <li>SPAWC 2020 Special Session Accepted Paper </li>
+       <li>Asilomar 2020 Special Session Accepted Paper </li>
      </ul>
    </div>
 
@@ -45,28 +46,37 @@
     <p>
       I just finished my first semester, where I took foundational courses
       in probability and estimation. I also got started in research, and began my first
-      paper, Deep Learning for Frequency Estimation in 6G Applications. I show first that
-      deep learning is both effective and beneficial for classic signal processing tasks
+      paper, Deep Learning-based Carrier Frequency Offset Estimation with 1-Bit ADCs. I show first that
+      deep learning is both effective and beneficial for classic frequency estimation tasks
       where there is more noise or strict requirements for parallelism. Below is
-      the abstract and author list. The authors wish to thank Samsung Research America
+      the abstract and author list. We have also recently submitted for a second special session
+      at Asilomar 2020, with brief details outlined below. The authors wish to thank Samsung Research America
       for their sponsorship of our work.
     </p>
     <h4> Deep Learning-based Carrier Frequency Offset Estimation with 1-Bit ADCs </h4>
-    <i> Ryan M. Dreifuerst, Robert W. Heath Jr, Mandar Kulknari </i>
+    <i> Ryan M. Dreifuerst, Robert W. Heath Jr, Mandar Kulknari, Jianzhong (Charlie) Zhang </i>
     <p style="font-size:15px">
-      Low resolution architectures are a power efficient solution for high bandwidth
-      communication at millimeter wave and TeraHertz frequencies. In such systems,
-      carrier synchronization is important yet has not received much attention in
-      prior work. In this paper, we develop and analyze deep learning architectures
-      that are able to accurately predict carrier frequency offset from 1-bit quantized
-      data with less pilot data and lower signal to noise ratios than traditional signal
-      processing methods. We compare each architecture style in terms of scalability for
-      future 5G and 6G base stations. We demonstrate different training methods and
-      evaluate how the models perform when trained in each method. Finally, simulation
-      results of the models' computational complexity, scalability, and mean squared
-      error versus classic signal processing techniques show the effectiveness of
-      deep learning for low resolution frequency estimation.
+      Low resolution architectures are a power efficient solution for high bandwidth communication at millimeter wave
+      and TeraHertz frequencies. In such systems, carrier synchronization is important yet has not received much attention in prior
+      work. In this paper, we develop and analyze deep learning architectures for estimating the carrier frequency of a complex sinusoid
+      in noise from the 1-bit samples of the in-phase and quadrature components. Carrier frequency offset estimation from a sinusoid
+      is used in GSM and is a first step towards developing a more comprehensive solution with other kinds of signals.
+      We train four different deep learning architectures each on five datasets which represent possible training considerations.
+      Specifically, we consider how training with various signal to noise ratios (SNR), quantization, and sequence lengths affects
+      estimation error. Further, we compare each architecture in terms of scalability for MIMO receivers. In simulations, we compare
+      computational complexity, scalability, and mean squared error versus classic signal processing techniques. We conclude that
+      training with quantized data, drawn from signals with SNR between 0-10dB tends to improve deep learning estimator performance
+      across the range of interest. We conclude that convolutional models have the best performance, while also scaling for
+      massive MIMO situations more efficiently than FFT models. Our approach is able to accurately estimate carrier frequencies
+      from 1-bit quantized data with fewer pilots and lower signal to noise ratios (SNRs) than traditional signal processing methods.
     </p>
+
+    <h4> Frequency Synchronization for Low Resolution Millimeter-Wave </h4>
+    <i> Ryan M. Dreifuerst, Robert W. Heath Jr, Mandar Kulknari, Jianzhong (Charlie) Zhang </i>
+    <p style="font-size:15px">
+      Carrier synchronization in high bandwidth millimeter wave (mmWave) systems is challenging due to difficult optimizations between cost, power, and resolution. We propose an efficient waveform and algorithm for mmWave communication and low resolution receivers based on structural properties of the training sequences. We show in simulations how our method is able to estimate frequency offset with few-bit ADCs in wideband channels with reasonable errors relative to the infinite resolution cases.
+    </p>
+
    </div>
 
    <div class="column right">
