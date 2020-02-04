@@ -49,26 +49,28 @@ body {
 }
 
 .left {
-  width: 18%;
+  width: 20%;
+  padding-left: 50px;
+  padding-right: 0px;
 }
 
 .right {
   padding-left: 10px;
-  width: 25%;
+  width: 23%;
 }
 
 .middle {
   width: 50%;
-  padding-right: 20px;
+  float: center;
 }
 .left-middle {
   position: relative;
-  width: 40%;
+  width: 45%;
   vertical-align: middle;
 }
 .right-middle{
   position: relative;
-  width: 40%;
+  width: 45%;
   vertical-align: bottom;
 }
 
@@ -113,9 +115,10 @@ img.logo {
   width: 50%;
   top: 0;
   bottom: 0;
-  left: 25%;
+  left: 15%;
   right: 0;
   margin: auto;
+  padding-right: 20px;
 }
 
 img.logo2 {
@@ -123,7 +126,7 @@ img.logo2 {
   width: 30%;
   top: 30%;
   bottom: 0;
-  left: -15%;
+  left: -10%;
   right: 0;
   margin: auto;
 }
