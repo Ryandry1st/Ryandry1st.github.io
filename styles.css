@@ -52,11 +52,13 @@ body {
   width: 20%;
   padding-left: 50px;
   padding-right: 0px;
+  position: relative;
 }
 
 .right {
   padding-left: 10px;
   width: 23%;
+  position: relative;
 }
 
 .middle {
