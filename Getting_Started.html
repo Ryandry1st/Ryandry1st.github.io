@@ -22,19 +22,20 @@
   <h1> Getting Started with Python</h1>
   <div class="column left-middle">
   <p><h3> Downloading Anaconda</h3></p>
-    Anaconda is a commonly used tool which provides a tons of tools for getting started
-    and managing your work. It serves as a tool for managing your environment, packages,
-    includes software like jupyter notebooks, and data visualization software.
+    Anaconda is a commonly used application which provides a ton of programs for getting started
+    and working in Python. It serves as a tool for managing your environment, packages,
+    and includes software like jupyter notebooks and Glueviz.
     We will not be getting too deep into using anaconda, but if you want to learn more,
     head over to anaconda.com and look at their tutorials.
   </p>
   <p>
-    Lets start by downloading the anaconda application <a href="https://www.anaconda.com/distribution/">
-    here</a>. Make sure to choose the Python 3.x one, not the python 2 one. Once you
+    Lets start by downloading <a href="https://www.anaconda.com/distribution/">
+    anaconda </a>. Make sure to choose the Python 3.x one, not the python 2 one. Once you
     download it, go through the installation by clicking continue and accept whenever prompted.
-    It may ask if you want to install pycharm, just click continue, you do not need pycharm.
+    It may ask if you want to install pycharm, just click continue, you do not need pycharm, since
+    we will work exclusively with jupyter notebooks for now.
     Once you have completed this, you will have anaconda installed, and the application you will
-    use to get started is called anaconda navigator which you can see here.
+    use to get started is called anaconda navigator which you can see to the right.
 
   </p>
   <p>
@@ -58,7 +59,7 @@
     Start by clicking on the arrow next to base(root) in the first column and selecting open terminal.
 
     Now you will see a terminal window open, which is just a way to type commands to your computer.
-    There are a few commands to run and I will explain each.
+    There are a few commands to run to install and update your packages.
     <pre>
       <code>
         conda install numpy
@@ -72,25 +73,59 @@
     It may ask you something which ends in "would you like to install [y/n]?". Just type "y" and press
     enter to continue installation. The first four simply install the packages, while the last command
     ensures that all of your packages are up to date, which will take longer than the other parts
-    and will write a lot of text.
+    and will write a lot of text letting you know all of the components being updated. After the text stops
+    flying by, you can close and terminate the terminal window.
+  </p>
+  <p>
+    Go back to the Anaconda Navigator homepage, and launch a jupyter notebook. That will
+    open another terminal window, which you can ignore, and open your browser to a local jupyter
+    notebook that shows your file system. Make a folder somewhere to hold your code files. Inside of
+    this notebook, click on the "new" button in the upper right hand corner and select Python 3
+    under notebooks. You should see a blank notebook which you can rename in the upper left corner,
+    similar to how google drive files work. I will rename mine to "Python_Basics", and I will
+    include a link to download the completed copy at the end as well. Now lets get to coding!
+  </p>
+  <p>
+    The first thing that any programming language will have you do is write a hello world statement.
+    So the first function you will use is the print function. The print function will
+    write out whatever you give it, making it useful for letting you know when your code gets somewhere
+    or to print out numbers. To call the function, start with the following:
+    <pre>
+      <code>
+        print("Hello World!")
+      </code>
+    </pre>
+  </p>
+  <p>
+    Then click on the run button in the top, or press shift-enter to run the code. You should
+    see Hello World! written below the block of code, and a new, empty block appear below it.
+    Whenever you want to call a function it requires the parenthesis () and whatever
+    arguments, or inputs, that the function expects. In this case we gave it the string, which
+    we have to enclose in the quotations so that it knows they are not variables.
   </p>
   </div>
-  <div class="column right-middle" style="width:50%;align:center">
+  <div class="column right-middle" style="width:50%;align:center; text-align:center">
     <img class="tutimg" src="figs/Anaconda_Navigator.png" alt="Finding Anaconda">
-    <img class="tutimg" src="figs/Anaconda_home.png" alt="Anaconda Homepage">
-    <img class="tutimg" src="figs/Open_Terminal.png" alt="Opening a terminal with Conda">
+    Opening Anaconda Navigator
+    <img class="tutimg" src="figs/Anaconda_home.png" alt="Anaconda Homepage" style="padding-top:30px">
+    Anaconda Navigator Homepage
+    <img class="tutimg" src="figs/Open_Terminal.png" alt="Opening a terminal with Conda" style="padding-top:30px">
+    Opening a terminal from Anaconda environments
+    <img class="tutimg" src="figs/First_Jupyter.png" style="padding-top:30px">
+    Writing your first program
   </div>
 
 
 
 
-
+  <!--
   <footer id="footer">
     <span> </span>
     <span><a href="https://twitter.com/Ryan_Dreifuerst"><i class="fab fa-twitter-square fa-3x"></i></a></span>
     <span><a href="https://github.com/Ryandry1st"><i class="fab fa-github-square fa-3x"></i></a></span>
     <span><a href="https://www.linkedin.com/in/ryandreifuerst"><i class="fab fa-linkedin fa-3x"></i></a></span>
   </footer>
+-->
 
 </div>
 </body>
