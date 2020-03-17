@@ -133,6 +133,10 @@ img.logo2 {
   margin: auto;
 }
 
+img.tutimg {
+  width: 500px;
+}
+
 img.homeimg {
   width: 100%;
 }

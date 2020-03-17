@@ -35,7 +35,7 @@
     It may ask if you want to install pycharm, just click continue, you do not need pycharm.
     Once you have completed this, you will have anaconda installed, and the application you will
     use to get started is called anaconda navigator which you can see here.
-    <img class="logo2" src="figs/Anaconda_Navigator.png" alt="Finding Anaconda">
+
   </p>
   <p>
     Now that it is installed, lets open up navigator and see what we can do. You
@@ -43,7 +43,7 @@
     for us will be the jupyter notebook, which is the second application. Jupyter notebooks
     are ideal for sharing information because it lets you run code and show the outputs all in
     a "notebook", hence the name.
-    <img class="logo2" src="figs/Anaconda_Home.png" alt="Anaconda Homepage">
+
   </p>
   <p>
     Before we open up a jupyter notebook and get to coding, we first need to install
@@ -52,19 +52,33 @@
     tab on the left side of the screen. You will see a large list on the right which has your
     packages. We want to install numpy, matplotlib, pandas, and scikit-learn. We will use the
     command line interface, which can be intimidating but is actually very easy to use.
-    <img class="logo2" src="figs/Anacodona_Environments.png" alt="Environemnts tab of Anaconda">
+
   </p>
   <p>
     Start by clicking on the arrow next to base(root) in the first column and selecting open terminal.
-    <img class="logo2" src="figs/Open_Terminal.png" alt="Opening a terminal with Conda">
+
     Now you will see a terminal window open, which is just a way to type commands to your computer.
     There are a few commands to run and I will explain each.
     <pre>
       <code>
         conda install numpy
+        conda install matplotlib
+        conda install pandas
+        conda install scikit-learn
+        conda update --all
       </code>
     </pre>
+    You can copy and paste each line of code into the terminal and press enter to run it.
+    It may ask you something which ends in "would you like to install [y/n]?". Just type "y" and press
+    enter to continue installation. The first four simply install the packages, while the last command
+    ensures that all of your packages are up to date, which will take longer than the other parts
+    and will write a lot of text. 
   </p>
+  </div>
+  <div class="column right-middle">
+    <img class="tutimg" src="figs/Anaconda_Navigator.png" alt="Finding Anaconda">
+    <img class="tutimg" src="figs/Anaconda_Home.png" alt="Anaconda Homepage">
+    <img class="tutimg" src="figs/Open_Terminal.png" alt="Opening a terminal with Conda">
   </div>
 
 
