@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<div class="topnav">
+  <a href="/"><i class="fas fa-home"></i>  Home</a>
+  <a href="/undergrad"><i class="fas fa-user-graduate"></i>  Undergrad</a>
+  <a href="/graduate"><i class="fas fa-university"></i>  Graduate School</a>
+  <a href="/research"><i class="fab fa-leanpub"></i>  Research</a>
+  <!-- <a href="/activities"><i class="fas fa-football-ball"></i>  Activities</a> -->
+  <a href="/professional"><i class="fas fa-award"></i>  Resume/CV</a>
+  <a href="/contact"><i class="far fa-address-book"></i>  Contact</a>
+  <a class="active" href="/tutorials"><i class="far fa-address-book"></i>  Tutorials</a>
+</div>
+
+<head>
+  <script src="https://kit.fontawesome.com/9d2d5bf903.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<div id="page-container">
+
+<body>
+  <h1> Getting Started with Python</h1>
+  <div class="column left-middle">
+  <p><h3> Downloading Anaconda</h3></p>
+    Anaconda is a commonly used tool which provides a tons of tools for getting started
+    and managing your work. It serves as a tool for managing your environment, packages,
+    includes software like jupyter notebooks, and data visualization software.
+    We will not be getting too deep into using anaconda, but if you want to learn more,
+    head over to anaconda.com and look at their tutorials.
+  </p>
+  <p>
+    Lets start by downloading the anaconda application <a href="https://www.anaconda.com/distribution/">
+    here</a>. Make sure to choose the Python 3.x one, not the python 2 one. Once you
+    download it, go through the installation by clicking continue and accept whenever prompted.
+    It may ask if you want to install pycharm, just click continue, you do not need pycharm.
+    Once you have completed this, you will have anaconda installed, and the application you will
+    use to get started is called anaconda navigator which you can see here.
+    <img src="figs/Anaconda_Navigator" alt="Finding Anaconda">
+  </p>
+  <p>
+    Now that it is installed, lets open up navigator and see what we can do. You
+    should see a window similar to mine, which shows a number of tools, the most useful
+    for us will be the jupyter notebook, which is the second application. Jupyter notebooks
+    are ideal for sharing information because it lets you run code and show the outputs all in
+    a "notebook", hence the name.
+    <img src="figs/Anaconda_Home" alt="Anaconda Homepage">
+  </p>
+  <p>
+    Before we open up a jupyter notebook and get to coding, we first need to install
+    any of the libraries that we will use. For now lets just work with the base environment,
+    although for a real project you would have a seperate environment. Click on the environments
+    tab on the left side of the screen. You will see a large list on the right which has your
+    packages. We want to install numpy, matplotlib, pandas, and scikit-learn. We will use the
+    command line interface, which can be intimidating but is actually very easy to use.
+    <img src="figs/Anacodona_Environments" alt="Environemnts tab of Anaconda">
+  </p>
+  <p>
+    Start by clicking on the arrow next to base(root) in the first column and selecting open terminal.
+    <img src="figs/Open_Terminal" alt="Opening a terminal with Conda">
+    Now you will see a terminal window open, which is just a way to type commands to your computer.
+    There are a few commands to run and I will explain each.
+    <pre>
+      <code>
+        conda install numpy
+      </code>
+    </pre>
+  </p>
+  </div>
+
+
+
+
+
+  <footer id="footer">
+    <span> </span>
+    <span><a href="https://twitter.com/Ryan_Dreifuerst"><i class="fab fa-twitter-square fa-3x"></i></a></span>
+    <span><a href="https://github.com/Ryandry1st"><i class="fab fa-github-square fa-3x"></i></a></span>
+    <span><a href="https://www.linkedin.com/in/ryandreifuerst"><i class="fab fa-linkedin fa-3x"></i></a></span>
+  </footer>
+
+</div>
+</body>
+</html>
