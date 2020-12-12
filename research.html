@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+  <script src="https://kit.fontawesome.com/9d2d5bf903.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
 <div class="topnav">
   <a href="/"><i class="fas fa-home"></i>  Home</a>
   <a href="/undergrad"><i class="fas fa-user-graduate"></i>  Undergrad</a>
@@ -9,19 +14,16 @@
   <!-- <a href="/activities"><i class="fas fa-football-ball"></i>  Activities</a> -->
   <a href="/professional"><i class="fas fa-award"></i>  Resume/CV</a>
   <a href="/contact"><i class="far fa-address-book"></i>  Contact</a>
-    <a href="/tutorials"><i class="fas fa-chalkboard-teacher"></i></i>  Tutorials</a>
+    <a href="/tutorials"><i class="fas fa-chalkboard-teacher"></i>  Tutorials</a>
 </div>
 
-<head>
-  <script src="https://kit.fontawesome.com/9d2d5bf903.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles.css">
-</head>
+
 <div id="page-container">
 
 <body>
   <h1> Research</h1>
   <div class="column left-middle">
-  <p><h3> General Research Focus: DL for Wireless</h3></p>
+  <p><h3> General Research Focus: ML for wireless and signal processing</h3></p>
     <p>
     The short of it is: I do machine learning for wireless communications problems.
     So far machine learning for signal processing has been particularly held back by the lack of need.
@@ -34,11 +36,11 @@
     researched but deep learning is well positioned to provide breakthroughs in this complicated problem
     as well.
   </p>
-  </br>
-  <p><h3> Deep Learning-Based Carrier Frequency Offset Estimation with 1-Bit ADCs</h3></p>
+  <br>
+  <p><h3> Deep Learning-Based Carrier Frequency Offset Estimation with 1-Bit ADCs <a href="https://github.com/Ryandry1st/Low-Res-Carrier-Frequency-Offset">[project page]</a></h3></p>
     <p>
       My first paper, which I gave a presentation on at SPAWC 2020
-      <a href="https://www.youtube.com/watch?v=sNUUNcUn78E&feature=youtu.be">[video]</a></li>,
+      <a href="https://www.youtube.com/watch?v=sNUUNcUn78E&feature=youtu.be">[video]</a>,
       specifically investigates the validity of deep learning for signal processing. We
       target the problem of estimating the carrier frequency offset of a one-bit quantized sinusoid with
       short block lengths and low SNR. We first show a well performing training setup, which
@@ -47,8 +49,8 @@
       the effects that block length and quantization on the training data have for the final model.
       Finally, we proposed a convolutional neural network which is able to outperform FFT methods in
       both estimation error and execution time.
-    <p>
-    </br>
+    </p>
+    <br>
   <p><h3> SignalNet: Network for Low Resolution Sinusoid Detection and Estimation</h3></p>
   <p>
     This work is the follow up to the previous paper. In this case we now allow for multiple sinusoids
@@ -58,14 +60,38 @@
     or three bits the task is learnable. We propose an end to end network which uses domain knowledge
     to estimate and subtract quantized sinusoids from the input for multiple signal estimation. We
     show that we are able to outperform Minimum Description Length (MDL) style detectors, even when
-    using much higher resolution data for the MDL estimator.
+    using much higher resolution data for the MDL estimator. I will release the code when the paper is accepted
+    at IEEE Trans. on Signal Processing.
   </p>
+  <br>
+  <p><h3> Frequency Synchronization for Low Resolution Millimeter-Wave</h3></p>
+  <p>
+    This work was presented at Asilomar 2020. We now introduce more realism
+    into the deep learning estimators from the first investigation.
+    The most obvious first step is to allow for channel models, which we model as just random, multi-tap channels.
+    The next step is we allow for a configurable pilot generator, which is also a neural network,
+    to jointly optimize the pilot signal and frequency estimator. The result is that our frequency
+    estimator becomes more robust at low SNR and is able to handle channel models without any noticeable effect.
+    We handle the channel effects by applying Moose Algorithm within the neural networks, which repeats
+     the training signal and looks for the rotation of phase between the pilots,
+     removing the channel from the algorithm.
+    We also show that the added complexity of the generator is still not significant enough to prevent
+    near real-time operation, and it is easily retrained to handle time-variant systems.
+  </p>
+
   </div>
   <div class="column right-middle" style="text-align:center">
     <img src="figs/All_Model_Comp.png" alt="Frequency estimator comparison" style="width:80%">
+    <br>
+    Results from my first investigation into low resolution sinusoidal frequency estimation.
+
+    <img src="figs/Generator2.PNG" alt="Neural Generator" style="width:80%">
+    <br>
+    A block diagram of the neural network generator used to produce pilot sequences
+    for improving channel and noise robustness with our CFO estimator.
+
   </div>
-  <div class="row">
-  </div>
+
 
 
 
