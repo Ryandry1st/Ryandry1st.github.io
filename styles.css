@@ -185,12 +185,15 @@ span{
 
 #content-wrap {
   padding-bottom: 2.5rem;    /* Footer height */
+  text-align: right;
+  align-items: right;
 }
 
 #footer {
   position: fixed;
+  float: right;
   bottom: 0;
-  width: 102rem;
+  width: 98%;
   height: 3.5rem;            /* Footer height */
   align-items: right;
   text-align: right;
