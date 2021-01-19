@@ -29,11 +29,13 @@
    <div class="column left">
      <h2 align="center"> Fast Facts </h2>
      <ul>
-       <li>3.93 GPA</li>
        <li>Supervised by Prof. Robert W Heath Jr. </li>
        <li>SPAWC 2020 Special Session Accepted Paper </li>
        <li>SPAWC 2020 Invited Presentation </li>
-       <li>Asilomar 2020 Special Session Submitted </li>
+       <li>Asilomar 2020 Special Session Accepted Paper </li>
+       <li>Asilomar 2020 Invited Presentation </li>
+       <li>ICASSP 2021 Special Session Accepted Paper </li>
+       <li>ICASSP 2021 Invited Presentation </li>
      </ul>
    </div>
 
@@ -86,15 +88,25 @@
     <h4> Frequency Synchronization for Low Resolution Millimeter-Wave </h4>
     <i> Ryan M. Dreifuerst, Robert W. Heath Jr, Mandar Kulknari, Jianzhong (Charlie) Zhang </i>
     <p style="font-size:15px">
-      Carrier synchronization in high bandwidth millimeter wave (mmWave) systems
-       is challenging due to difficult optimizations between cost, power, and
-       resolution. We propose an efficient waveform and algorithm for mmWave
-       communication and low resolution receivers based on structural properties
-        of the training sequences. We show in simulations how our method is able
-         to estimate frequency offset with few-bit ADCs in wideband channels
-         with reasonable errors relative to the infinite resolution cases.
-    </p>
-
+        Low resolution data converters can enable power efficient high bandwidth
+        communication at millimeter-wave and terahertz frequencies.
+        Synchronization of such systems is a critical step in accurate decoding,
+        yet current approaches require long block lengths or fail to reach the
+        Cram{\'e}r Rao Bound (CRB). Prior solutions have traditionally been
+        divided into two distinct focuses: algorithms and designed sequences
+        for synchronization. In this paper, we develop a jointly optimized
+        neural architecture for frequency synchronization from configurable
+        sequences and estimators. Our proposed technique uses two neural
+        networks to generate sequences and determine the carrier frequency
+        offset of the sequence after propagating through a channel and applying
+        one-bit quantization. Our simulations show that we can improve estimation
+        performance at low signal to noise ratio (SNR) by up to 8dB at little
+        cost compared to the same estimator without the sequence generator.
+        Our proposed system is fast, efficient, and easily updated, allowing it 
+        to handle time-varying systems. In conclusion, we believe further
+        investigation in jointly optimized pilot sequences and estimators will
+        be fundamental to handling signal processing techniques with low
+        resolution data converters.  </p>
    </div>
 
    <div class="column right" style="padding-left:30px">
@@ -141,11 +153,23 @@
            <td>  Autonomous Robots </td>
            <td> CS 393R </td>
            <td> 3.0 </td>
-           <td> In Progress </td>
+           <td> A </td>
          </tr>
          <tr>
            <td>  Convex Optimization  </td>
            <td> EE 381K-18 </td>
+           <td> 3.0 </td>
+           <td> B+ </td>
+         </tr>
+         <tr>
+           <td>  Wireless Communications  </td>
+           <td> EE 381K-11 </td>
+           <td> 3.0 </td>
+           <td> In Progress </td>
+         </tr>
+         <tr>
+           <td>  Adv. Computer Vision  </td>
+           <td> EE 381V </td>
            <td> 3.0 </td>
            <td> In Progress </td>
          </tr>
