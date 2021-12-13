@@ -30,10 +30,12 @@
      <h2 align="center"> Fast Facts </h2>
      <ul>
        <li>Supervised by Prof. Robert W Heath Jr. </li>
-       <li>Researching ML + Wireless</li>
+       <li>Researching ML-assisted wireless communications</li>
        <li>SPAWC 2020 Special Session Accepted Paper </li>
        <li>Asilomar 2020 Special Session Accepted Paper </li>
        <li>ICASSP 2021 Special Session Accepted Paper </li>
+       <li>TSP paper in submission </li>
+       <li>VTC 2022 Paper in submission </li>
      </ul>
    </div>
 
@@ -42,26 +44,40 @@
      <p style="font-size:19px">
        I currently attend the University of Texas at Austin, where I am pursuing a M.S./PhD
        supervised by <a href="http://www.profheath.org/" target="_blank"> Prof. Robert W. Heath Jr</a>.
-       My primary research is integrating signal processing and machine learning for Wireless
+       My primary research is integrating signal processing and machine learning for wireless
        communications.
     </p>
     <p>
       I finished my first year, and I can safely say it was a huge year for me.
       I took foundational courses in probability, estimation, and machine learning.
-      Most recently, I took a course on statistical machine learning, which was both
+      In spring, I took a course on statistical machine learning, which was both
       incredibly interesting and quite tough. My research kicked off well, with
       "Deep Learning-based Carrier Frequency Offset Estimation with 1-Bit ADCs"
       accepted to <a href="https://spawc2020.netlify.app/">SPAWC 2020</a>.
       I was able to give a recorded presentation of that paper as well, which are two
-      big milestones in my research career. I am now working on the follow up work,
-      which focuses on multiple sinusoid detection and estimation. For more information
-      about my research, head over to the research tab.
-
-      I was also intended to intern at <a href="https://www.ll.mit.edu/">MIT Lincoln Labs</a>,
+      big milestones in my research career. I was also intended to intern at
+      <a href="https://www.ll.mit.edu/">MIT Lincoln Labs</a>,
       however, that was canceled as a result of COVID-19. Luckily, the wireless team
-      at <a href="https://connectivity.fb.com/">Facebook</a> was looking for assistance with simulations and AI for developing
-      Open Radio Access Network (ORAN) functionality. I will update this as the summer
-      ends and I can give a complete picture of my work.
+      at <a href="https://connectivity.fb.com/">Facebook</a> was looking for
+      assistance with simulations and AI for developing Open Radio Access
+      Network (ORAN) functionality.
+
+      My work with Facebook was fruitful and led to continued
+      collaboration and support. We published the first of our work on coverage
+      and capacity optimization (CCO) in ICASSP 2021, which I presented in a recorded format.
+      This paper was especially interesting for considering the Pareto Frontier of
+      CCO as well as comparing Bayesian Optimization and deep reinforcement learning.
+      Later that year, I completed my master's degree at UT and have submitted my first
+      journal paper on multi-sinusoidal parameter estimation from low resolution sampling.
+      We proposed a novel neural architecture that uses successive estimation and cancellation
+      to produce an effecient and powerful estimator that outperforms traditional methods.
+      We also used this work to present a simple learning heuristic: the "learning threshold".
+      This statistcal measure determines what level of generalization or feature learning
+      that a neural network achieves compared to simple distributional learning.
+
+      In my third (current) year, I have been working on codebook design and become
+      very familiar with 5G NR beam management and feedback. This work is still waiting
+      to be published at VTC 2022 and a future journal, so stay tuned!
 
 
     </p>
@@ -105,7 +121,54 @@
         investigation in jointly optimized pilot sequences and estimators will
         be fundamental to handling signal processing techniques with low
         resolution data converters.  </p>
-   </div>
+
+   <h4> Optimizing Coverage and Capacity in Cellular Networks using Machine Learning </h4>
+   <i> Ryan M. Dreifuerst et. al</i>
+   <p style="font-size:15px">
+     Wireless cellular networks have many parameters that are normally tuned upon
+    deployment and re-tuned as the network changes. Many operational parameters
+    affect reference signal received power (RSRP), reference signal received
+    quality (RSRQ), signal-to-interference-plus-noise-ratio (SINR), and,
+    ultimately, throughput. In this paper, we develop and compare two approaches
+    for maximizing coverage and minimizing interference by jointly optimizing
+    the transmit power and downtilt (elevation tilt) settings across sectors.
+    To evaluate different parameter configurations offline, we construct a
+    realistic simulation model that captures geographic correlations. Using this
+    model, we evaluate two optimization methods: deep deterministic policy
+    gradient (DDPG), a reinforcement learning (RL) algorithm, and multi-objective
+    Bayesian optimization (BO). Our simulations show that both approaches
+    significantly outperform random search and converge to comparable Pareto
+    frontiers, but that BO converges with two orders of magnitude fewer
+    evaluations than DDPG. Our results suggest that data-driven techniques can
+    effectively self-optimize coverage and capacity in cellular networks. </p>
+
+    <h4> SignalNet: A Low Resolution Sinusoid Decomposition and Estimation Network </h4>
+    <i> Ryan M. Dreifuerst and Robert W. Heath Jr</i>
+    <p style="font-size:15px">
+        The detection and estimation of sinusoids is a fundamental signal
+        processing task for many applications related to sensing and
+        communications. While algorithms have been proposed for this setting,
+        quantization is a critical, but often ignored modeling effect. In
+        wireless communications, estimation with low resolution data converters
+        is relevant for reduced power consumption in wideband receivers. Similarly,
+        low resolution sampling in imaging and spectrum sensing allows for
+        efficient data collection. In this work, we propose SignalNet, a neural
+        network architecture that detects the number of sinusoids and estimates
+        their parameters from quantized in-phase and quadrature samples. We
+        incorporate signal reconstruction internally as domain knowledge within
+        the network to enhance learning and surpass traditional algorithms in mean
+        squared error and Chamfer error. We introduce a worst-case learning
+        threshold for comparing the results of our network relative to the
+        underlying data distributions. This threshold provides insight into why
+        neural networks tend to outperform traditional methods and into the
+        learned relationships between the input and output distributions. In
+        simulation, we find that our algorithm is always able to surpass the
+        threshold for three-bit data but often cannot exceed the threshold for
+        one-bit data. We use the learning threshold to explain, in the one-bit
+        case, how our estimators learn to minimize the distributional loss,
+        rather than learn features from the data.
+      </p>
+
 
    <div class="column right" style="padding-left:30px">
      <h2 align="center"> Courses of Note </h2>
