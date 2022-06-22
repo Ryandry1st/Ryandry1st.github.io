@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<div class="topnav">
+  <a class="active" href="/"><i class="fas fa-home"></i>  Home</a>
+  <a href="/undergrad"><i class="fas fa-user-graduate"></i>  Undergrad</a>
+  <a href="/graduate"><i class="fas fa-university"></i>  Graduate School</a>
+  <a href="/research"><i class="fab fa-leanpub"></i>  Research</a>
+  <!-- <a href="/activities"><i class="fas fa-football-ball"></i>  Activities</a> -->
+  <a href="/professional"><i class="fas fa-award"></i>  Resume/CV</a>
+  <a href="/contact"><i class="far fa-address-book"></i>  Contact</a>
+  <a href="/tutorials"><i class="fas fa-chalkboard-teacher"></i></i>  Tutorials</a>
+</div>
+
+<head>
+  <script src="https://kit.fontawesome.com/9d2d5bf903.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="page-container">
+  <div style="text-align:center"><h1> Ryan Dreifuerst </h1></div>
+  <div class="row" style="padding:5px">
+    <div class="column left" style="padding-right:30px"> <img class="homeimg" src="figs/Headshot.jpg"> </div>
+    <div class="column middle" style="align:left;width:60%">
+      <p style="font-size:24px">
+        Thank you for your interest in my work. If you have any questions feel free to head over
+        to the contact page and send me an email. Please know that this website is
+        still under construction and may not be fully up to date!
+      </p>
+      <h3> Quick Summary </h3>
+      <p>
+	  
+        Professionally, I am now a PhD Candidate at <strike>
+        <a href="https://www.utexas.edu/" target="_blank">
+          the University of Texas at Austin</a href> </strike>
+          <a href="https://www.ncsu.edu/" target="_blank">
+            North Carolina State University  </a href>
+          studying under
+        <a href="http://www.profheath.org/" target="_blank"> Prof. Robert W. Heath Jr</a>.
+          My research focuses on integrating signal processing and machine learning
+          for next generation wireless communication (5G, 6G). To see this work specifically,
+          check out my <a href="https://ryandry1st.github.io/research">research</a>.
+
+          If you want to check out some of my projects in general head over to my
+          <a href="https://github.com/Ryandry1st" target="_blank">github profile</a>.
+
+      </p>
+      <p>
+        If you want to get to know more about me, feel free to look through some
+        of the things I have done during my <a href="https://ryandry1st.github.io/undergrad">
+          undergraduate studies</a>, <a href="https://ryandry1st.github.io/graduate">
+            graduate studies</a> or connect with me on social media.
+      </p>
+    <p>
+      Finally, if you are interested in a professional setting, head over to
+        my <a href="/professional">CV</a> to see if we could connect professionally.
+      If so, make sure to <a href="/contact">reach out to me</a>. I am always interested in opportunities
+      and talking shop!
+    </p>
+    <p>
+    </br>
+      <div style="text-align:center"><b> Recent Updates </b></div>
+      <ul>
+
+        <li> Our <a href="https://arxiv.org/abs/2204.06064">[paper]</a> on sub-6GHz codebook design was accepted for oral presentation at VTC 2022. </li>
+        <li> I have accepted an internship offer with Samsung Research America
+          to research AI for next-generation wireless networks! </li>
+        <li> We have submitted our paper, "SignalNet: A Low Resolution Sinusoidal
+           Decomposition and Estimation Network", to IEEE TSP. </li>
+        <li> I accepted an internship offer to work with Qualcomm on 5G NR!
+        <li> Our paper, "Optimizing Coverage and Capacity in Cellular Networks using Machine Learning",
+             was accepted at ICASSP 2021! You can read it on arxiv now
+             <a href="https://arxiv.org/abs/2010.13710">[paper].</a></li>
+        <!-- <li> I presented our working on learnable synchronization pilot sequences at Asilomar 2020. </li>
+=======
+        <li> I accepted an internship offer to work with Samsung Research America on ML in 5G-advanced/6G this summer. </li>
+        <li> Our work on ML-assisted codebook design for sub-6GHz beam management was accepted at VTC 2022.
+          Read it on arxiv now  <a href="https://arxiv.org/abs/2204.06064">[paper].</a></li>
+        <li> I am headed to NC State to continue my PhD with Prof. Robert Heath. </li>
+        <li> I advanced to PhD candidacy at UT Austin and will be working heavily on ML-assisted Massive MIMO for the next season. </li>
+        <li> I accepted an internship offer to work with Qualcomm on 5G NR for Summer 2021. </li>
+        <li> Our paper, "Optimizing Coverage and Capacity in Cellular Networks using Machine Learning",
+             was accepted at ICASSP 2021! You can read it on arxiv now
+             <a href="https://arxiv.org/abs/2010.13710">[paper].</a></li>
+        <li> I presented our working on learnable synchronization pilot sequences at Asilomar 2021. </li>
+>>>>>>> Stashed changes
+        <li> I gave a presentation at SPAWC 2020 on our recent paper, "Deep Learning-Based Carrier
+             Frequency Offset Estimation with 1-Bit ADCs"
+             <a href="https://www.youtube.com/watch?v=sNUUNcUn78E&feature=youtu.be">[video].</a></li>
+        <li> I accepted a summer position with Facebook working on ORAN development with AI. </li>
+        <!-- <li> Finished my first year of graduate school. </li>
+        <li> My first conference paper, "Deep Learning-Based Carrier Frequency
+          Offset Estimation with 1-Bit ADCs" was accepted to SPAWC 2020. </li> -->
+    </p>
+    </div>
+  </div>
+
+
+
+  <footer id="footer">
+    <span> </span>
+    <span><a href="https://twitter.com/Ryan_Dreifuerst"><i class="fab fa-twitter-square fa-3x"></i></a></span>
+    <span><a href="https://github.com/Ryandry1st"><i class="fab fa-github-square fa-3x"></i></a></span>
+    <span><a href="https://www.linkedin.com/in/ryandreifuerst"><i class="fab fa-linkedin fa-3x"></i></a></span>
+  </footer>
+
+</div>
+</body>
+</html>

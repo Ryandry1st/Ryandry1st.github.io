@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<div class="topnav">
+  <a href="/"><i class="fas fa-home"></i>  Home</a>
+  <a href="/undergrad"><i class="fas fa-user-graduate"></i>  Undergrad</a>
+  <a class="active" href="/graduate"><i class="fas fa-university"></i>  Graduate School</a>
+  <a href="/research"><i class="fab fa-leanpub"></i>  Research</a>
+  <!-- <a href="/activities"><i class="fas fa-football-ball"></i>  Activities</a> -->
+  <a href="/professional"><i class="fas fa-award"></i>  Resume/CV</a>
+  <a href="/contact"><i class="far fa-address-book"></i>  Contact</a>
+    <a href="/tutorials"><i class="fas fa-chalkboard-teacher"></i></i>  Tutorials</a>
+</div>
+
+<head>
+  <script src="https://kit.fontawesome.com/9d2d5bf903.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="page-container">
+  <h1> Graduate School</h1>
+
+ <div class="row" style="padding-top:20px;">
+   <img class="logo2" src="figs/UT_Logo.png" alt="UT">
+ </div>
+
+ <div class="row">
+   <div class="column left">
+     <h2 align="center"> Fast Facts </h2>
+     <ul>
+       <li>Supervised by Prof. Robert W Heath Jr. </li>
+       <li>Researching ML-assisted wireless communications</li>
+       <li>SPAWC 2020 Special Session Accepted Paper </li>
+       <li>Asilomar 2020 Special Session Accepted Paper </li>
+       <li>ICASSP 2021 Special Session Accepted Paper </li>
+       <li>TSP paper in submission </li>
+       <li>VTC 2022 Paper in submission </li>
+     </ul>
+   </div>
+
+   <div class="column middle">
+     <h2 align="center"> Graduate Degrees </h2>
+     <p style="font-size:19px">
+       I currently attend the University of Texas at Austin, where I am pursuing a M.S./PhD
+       supervised by <a href="http://www.profheath.org/" target="_blank"> Prof. Robert W. Heath Jr</a>.
+       My primary research is integrating signal processing and machine learning for wireless
+       communications.
+    </p>
+    <p>
+      I finished my first year, and I can safely say it was a huge year for me.
+      I took foundational courses in probability, estimation, and machine learning.
+      In spring, I took a course on statistical machine learning, which was both
+      incredibly interesting and quite tough. My research kicked off well, with
+      "Deep Learning-based Carrier Frequency Offset Estimation with 1-Bit ADCs"
+      accepted to <a href="https://spawc2020.netlify.app/">SPAWC 2020</a>.
+      I was able to give a recorded presentation of that paper as well, which are two
+      big milestones in my research career. I was also intended to intern at
+      <a href="https://www.ll.mit.edu/">MIT Lincoln Labs</a>,
+      however, that was canceled as a result of COVID-19. Luckily, the wireless team
+      at <a href="https://connectivity.fb.com/">Facebook</a> was looking for
+      assistance with simulations and AI for developing Open Radio Access
+      Network (ORAN) functionality.
+
+      My work with Facebook was fruitful and led to continued
+      collaboration and support. We published the first of our work on coverage
+      and capacity optimization (CCO) in ICASSP 2021, which I presented in a recorded format.
+      This paper was especially interesting for considering the Pareto Frontier of
+      CCO as well as comparing Bayesian Optimization and deep reinforcement learning.
+      Later that year, I completed my master's degree at UT and have submitted my first
+      journal paper on multi-sinusoidal parameter estimation from low resolution sampling.
+      We proposed a novel neural architecture that uses successive estimation and cancellation
+      to produce an effecient and powerful estimator that outperforms traditional methods.
+      We also used this work to present a simple learning heuristic: the "learning threshold".
+      This statistcal measure determines what level of generalization or feature learning
+      that a neural network achieves compared to simple distributional learning.
+
+      In my third (current) year, I have been working on codebook design and become
+      very familiar with 5G NR beam management and feedback. This work is still waiting
+      to be published at VTC 2022 and a future journal, so stay tuned!
+
+
+    </p>
+    <h4> Deep Learning-based Carrier Frequency Offset Estimation with 1-Bit ADCs </h4>
+    <i> Ryan M. Dreifuerst, Robert W. Heath Jr, Mandar Kulknari, Jianzhong (Charlie) Zhang </i>
+    <p style="font-size:15px">
+      Low resolution architectures are a power efficient solution for high bandwidth communication at millimeter wave
+      and TeraHertz frequencies. In such systems, carrier synchronization is important yet has not received much attention in prior
+      work. In this paper, we develop and analyze deep learning architectures for estimating the carrier frequency of a complex sinusoid
+      in noise from the 1-bit samples of the in-phase and quadrature components. Carrier frequency offset estimation from a sinusoid
+      is used in GSM and is a first step towards developing a more comprehensive solution with other kinds of signals.
+      We train four different deep learning architectures each on five datasets which represent possible training considerations.
+      Specifically, we consider how training with various signal to noise ratios (SNR), quantization, and sequence lengths affects
+      estimation error. Further, we compare each architecture in terms of scalability for MIMO receivers. In simulations, we compare
+      computational complexity, scalability, and mean squared error versus classic signal processing techniques. We conclude that
+      training with quantized data, drawn from signals with SNR between 0-10dB tends to improve deep learning estimator performance
+      across the range of interest. We conclude that convolutional models have the best performance, while also scaling for
+      massive MIMO situations more efficiently than FFT models. Our approach is able to accurately estimate carrier frequencies
+      from 1-bit quantized data with fewer pilots and lower signal to noise ratios (SNRs) than traditional signal processing methods.
+    </p>
+
+    <h4> Frequency Synchronization for Low Resolution Millimeter-Wave </h4>
+    <i> Ryan M. Dreifuerst, Robert W. Heath Jr, Mandar Kulknari, Jianzhong (Charlie) Zhang </i>
+    <p style="font-size:15px">
+        Low resolution data converters can enable power efficient high bandwidth
+        communication at millimeter-wave and terahertz frequencies.
+        Synchronization of such systems is a critical step in accurate decoding,
+        yet current approaches require long block lengths or fail to reach the
+        Cram{\'e}r Rao Bound (CRB). Prior solutions have traditionally been
+        divided into two distinct focuses: algorithms and designed sequences
+        for synchronization. In this paper, we develop a jointly optimized
+        neural architecture for frequency synchronization from configurable
+        sequences and estimators. Our proposed technique uses two neural
+        networks to generate sequences and determine the carrier frequency
+        offset of the sequence after propagating through a channel and applying
+        one-bit quantization. Our simulations show that we can improve estimation
+        performance at low signal to noise ratio (SNR) by up to 8dB at little
+        cost compared to the same estimator without the sequence generator.
+        Our proposed system is fast, efficient, and easily updated, allowing it
+        to handle time-varying systems. In conclusion, we believe further
+        investigation in jointly optimized pilot sequences and estimators will
+        be fundamental to handling signal processing techniques with low
+        resolution data converters.  </p>
+
+   <h4> Optimizing Coverage and Capacity in Cellular Networks using Machine Learning </h4>
+   <i> Ryan M. Dreifuerst et. al</i>
+   <p style="font-size:15px">
+     Wireless cellular networks have many parameters that are normally tuned upon
+    deployment and re-tuned as the network changes. Many operational parameters
+    affect reference signal received power (RSRP), reference signal received
+    quality (RSRQ), signal-to-interference-plus-noise-ratio (SINR), and,
+    ultimately, throughput. In this paper, we develop and compare two approaches
+    for maximizing coverage and minimizing interference by jointly optimizing
+    the transmit power and downtilt (elevation tilt) settings across sectors.
+    To evaluate different parameter configurations offline, we construct a
+    realistic simulation model that captures geographic correlations. Using this
+    model, we evaluate two optimization methods: deep deterministic policy
+    gradient (DDPG), a reinforcement learning (RL) algorithm, and multi-objective
+    Bayesian optimization (BO). Our simulations show that both approaches
+    significantly outperform random search and converge to comparable Pareto
+    frontiers, but that BO converges with two orders of magnitude fewer
+    evaluations than DDPG. Our results suggest that data-driven techniques can
+    effectively self-optimize coverage and capacity in cellular networks. </p>
+
+    <h4> SignalNet: A Low Resolution Sinusoid Decomposition and Estimation Network </h4>
+    <i> Ryan M. Dreifuerst and Robert W. Heath Jr</i>
+    <p style="font-size:15px">
+        The detection and estimation of sinusoids is a fundamental signal
+        processing task for many applications related to sensing and
+        communications. While algorithms have been proposed for this setting,
+        quantization is a critical, but often ignored modeling effect. In
+        wireless communications, estimation with low resolution data converters
+        is relevant for reduced power consumption in wideband receivers. Similarly,
+        low resolution sampling in imaging and spectrum sensing allows for
+        efficient data collection. In this work, we propose SignalNet, a neural
+        network architecture that detects the number of sinusoids and estimates
+        their parameters from quantized in-phase and quadrature samples. We
+        incorporate signal reconstruction internally as domain knowledge within
+        the network to enhance learning and surpass traditional algorithms in mean
+        squared error and Chamfer error. We introduce a worst-case learning
+        threshold for comparing the results of our network relative to the
+        underlying data distributions. This threshold provides insight into why
+        neural networks tend to outperform traditional methods and into the
+        learned relationships between the input and output distributions. In
+        simulation, we find that our algorithm is always able to surpass the
+        threshold for three-bit data but often cannot exceed the threshold for
+        one-bit data. We use the learning threshold to explain, in the one-bit
+        case, how our estimators learn to minimize the distributional loss,
+        rather than learn features from the data.
+      </p>
+
+
+   <div class="column right" style="padding-left:30px">
+     <h2 align="center"> Courses of Note </h2>
+       <table align="center">
+         <b> <tr>
+           <th> Course Name </th>
+           <th> Course Code </th>
+           <th> Credit Hours </th>
+           <th> Grade </th>
+         </tr> </b>
+         <!-- Lists the courses here -->
+         <tr>
+           <td>  Probability and Stochastic Processes  </td>
+           <td> EE 381J </td>
+           <td> 3.0 </td>
+           <td> A </td>
+         </tr>
+         <tr>
+           <td>  Statistical Estimation Theory  </td>
+           <td> ASE 381P-6 </td>
+           <td> 3.0 </td>
+           <td> A </td>
+         </tr>
+         <tr>
+           <td>  Statistical Machine Learning  </td>
+           <td> EE 381V </td>
+           <td> 3.0 </td>
+           <td> A- </td>
+         </tr>
+         <tr>
+           <td>  Digital Communications  </td>
+           <td> EE 381K-2 </td>
+           <td> 3.0 </td>
+           <td> A </td>
+         </tr>
+         <tr>
+           <td>  Data Mining  </td>
+           <td> EE 380L-10 </td>
+           <td> 3.0 </td>
+           <td> A </td>
+         </tr>
+         <tr>
+           <td>  Autonomous Robots </td>
+           <td> CS 393R </td>
+           <td> 3.0 </td>
+           <td> A </td>
+         </tr>
+         <tr>
+           <td>  Convex Optimization  </td>
+           <td> EE 381K-18 </td>
+           <td> 3.0 </td>
+           <td> B+ </td>
+         </tr>
+         <tr>
+           <td>  Wireless Communications  </td>
+           <td> EE 381K-11 </td>
+           <td> 3.0 </td>
+           <td> A </td>
+         </tr>
+         <tr>
+           <td>  Space-Time Communication Theory  </td>
+           <td> ECE 792 </td>
+           <td> 4.0 </td>
+           <td> A+ </td>
+         </tr>
+       </table>
+   </div>
+
+ </div>
+
+
+
+ <footer id="footer">
+   <span> </span>
+   <span><a href="https://twitter.com/Ryan_Dreifuerst"><i class="fab fa-twitter-square fa-3x"></i></a></span>
+   <span><a href="https://github.com/Ryandry1st"><i class="fab fa-github-square fa-3x"></i></a></span>
+   <span><a href="https://www.linkedin.com/in/ryandreifuerst"><i class="fab fa-linkedin fa-3x"></i></a></span>
+ </footer>
+
+</div>
+</body>
+</html>
