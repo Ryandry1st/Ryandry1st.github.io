@@ -62,12 +62,12 @@ body {
 }
 
 .middle {
-  width: 48%;
+  width: 46%;
   float: center;
 }
 .left-middle {
   position: relative;
-  width: 45%;
+  width: 48%;
   vertical-align: middle;
 }
 .right-middle{
