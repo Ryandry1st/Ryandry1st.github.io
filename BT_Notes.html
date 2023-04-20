@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<!-- <div class="topnav">
+  <a href="/"><i class="fas fa-home"></i>  Home</a>
+  <a href="/undergrad"><i class="fas fa-user-graduate"></i>  Undergrad</a>
+  <a href="/graduate"><i class="fas fa-university"></i>  Graduate School</a>
+  <a href="/research"><i class="fab fa-leanpub"></i>  Research</a>
+  <a href="/professional"><i class="fas fa-award"></i>  Resume/CV</a>
+  <a href="/contact"><i class="far fa-address-book"></i>  Contact</a>
+    <a href="/tutorials"><i class="fas fa-chalkboard-teacher"></i></i>  Tutorials</a>
+</div> -->
+
+<head>
+  <script src="https://kit.fontawesome.com/9d2d5bf903.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<div id="page-container">
+<body>
+<!-- Would like to have something at the top of the groups with links to each distillery -->
+<br><br>
+<div class="row">
+<div class="column left-middle">
+<h2 align="center"> Distillery Options </h2>
+  <table align="center">
+    <b> <tr>
+      <th> Distillery </th>
+      <th> Grouping </th>
+      <th> Location </th>
+      <th> Visit options </th>
+      <th> Price </th>
+    </tr> </b>
+    <tr>
+      <td>  <a href="#BT">Buffalo Trace</a>  </td>
+      <td> A </td>
+      <td> <a href="https://www.google.com/maps/place/Buffalo+Trace+Distillery/@38.2277843,-84.679946,10.94z/data=!4m6!3m5!1s0x88420b4fdd43582f:0x361dd99483cf9fcc!8m2!3d38.2165649!4d-84.8710442!16s%2Fm%2F03c3_7b" target="_blank">Frankfort </a></td>
+      <td> Tour (75min) <br> Hard Hat (75min 11:30/12:30) <br> Old Taylor (75min 10/2) </td>
+      <td> Free <br> Free <br> Free </td>
+    </tr>
+    <tr>
+      <td>  <a href="#WR">Woodford Reserve</a>  </td>
+      <td> A </td>
+      <td> <a href="https://www.google.com/maps/place/Woodford+Reserve+Distillery/@38.1132942,-84.8108389,15z/data=!4m2!3m1!1s0x0:0x77f187acf3b68972?sa=X&ved=2ahUKEwi7_9GEi7H-AhWaElkFHbY7Ae0Q_BJ6BAhNEAg" target="_blank">Frankfort/Lexington </a></td>
+      <td> Tour (70min) <br> Tasting (30min) <br> Elevated (70min sat. 11pm) <br> Mixology (45min)</td>
+      <td> $32 <br> $25 <br> $125 <br> $40 </td>
+  <tr>
+    <td>  <a href="#FR1">Four Roses Distillery</a>  </td>
+    <td> A </td>
+    <td> <a href="https://www.google.com/maps/place/Four+Roses+Distillery/@38.0320549,-84.7005262,11.1z/data=!4m6!3m5!1s0x88427918ac40446d:0xda0173b9f2376191!8m2!3d37.9734293!4d-84.8975613!16s%2Fg%2F1hc42ztcz" target="_blank">West Lexington </a></td>
+    <td> Tour (75min) <br> Tasting (30min) <br> Elevated tasting (70min fri. 2pm)</td>
+    <td> $22 <br> $16 <br> $45</td>
+  </tr>
+  <tr>
+    <td>  <a href="#WT">Wild Turkey</a>  </td>
+    <td> A </td>
+    <td> <a href="https://www.google.com/maps/place/Wild+Turkey+Temporary+Gift+Shop/@38.0379076,-84.853891,17z/data=!3m1!4b1!4m6!3m5!1s0x884270a99e17fe8b:0x5377a63f07cdab31!8m2!3d38.0379034!4d-84.8513161!16zL20vMDNudHZs" target="_blank">West Lexington </a></td>
+    <td> Cash Bar </td>
+    <td> $ </td>
+  </tr>
+  <tr>
+    <td>  <a href="#3Boys">Three Boys Farm</a>  </td>
+    <td> A </td>
+    <td> <a href="https://www.google.com/maps/place/Whiskey+Thief+Distilling+Co./@38.1134508,-84.8914128,11.04z/data=!4m6!3m5!1s0x8869deecfa3fee57:0xd79c1446e85f11c1!8m2!3d38.1490745!4d-84.999237!16s%2Fg%2F11bwf7k3_h" target="_blank">West Frankfort </a></td>
+    <td> Thieving tour </td>
+    <td> $35 </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>  <a href="#OF">Old Forester</a>  </td>
+    <td> B </td>
+    <td> <a href="https://www.google.com/maps/place/Old+Forester+Distilling+Co./@38.2578646,-85.7267983,12.12z/data=!4m6!3m5!1s0x886973a08a3f1ba9:0x71c166a69db3c8f9!8m2!3d38.2563344!4d-85.7524152!16s%2Fg%2F11f681z12d" target="_blank">Louisville </a></td>
+    <td> Tour <br> Elevated Tour <br> </td>
+    <td> $35 <br> $70 </td>
+  </tr>
+    <td>  <a href="#EW">Evan Williams</a>  </td>
+    <td> B </td>
+    <td> <a href="https://www.google.com/maps/place/Evan+Williams+Bourbon+Experience/@38.2567859,-85.7620316,17z/data=!3m1!4b1!4m6!3m5!1s0x886972a3851b56dd:0xbc2622ef75f24b3a!8m2!3d38.2567817!4d-85.7594567!16s%2Fg%2F1v9t_nbx" target="_blank">Louisville </a></td>
+    <td> Tour <br> Speakeasy tasting <br> Bartender experience </td>
+    <td> $18 <br> $25 <br> $35 </td>
+  </tr>
+</tr>
+  <td>  <a href="#Mich">Michters</a>  </td>
+  <td> B </td>
+  <td> <a href="https://www.google.com/maps/place/Michters+Fort+Nelson+Distillery/@38.2530675,-85.7490387,15.37z/data=!4m6!3m5!1s0x886972a116e86675:0x59be4170bb2df347!8m2!3d38.2576837!4d-85.7632506!16s%2Fg%2F11fzvphg9c" target="_blank">Louisville </a></td>
+  <td> Tour (60min) <br> Elevated tour (90min fri 12pm) <br> Super tour (120min ??)</td>
+  <td> $20 <br> $50 <br> $100 </td>
+</tr>
+</tr>
+  <td>  <a href="#Peer">Peerless</a>  </td>
+  <td> B </td>
+  <td> <a href="https://www.google.com/maps/place/Kentucky+Peerless+Distilling+Co/@38.2585717,-85.7690194,17z/data=!3m1!4b1!4m6!3m5!1s0x88696d5f7eb0be41:0x58c28a396667ef2c!8m2!3d38.2585675!4d-85.7664445!16s%2Fg%2F11bbygvfdx" target="_blank">Louisville </a></td>
+  <td> Tour (75min) <br> Tasting (45min) <br> Elevated tour (?? thur 1pm, 8 people)</td>
+  <td> $28 <br> $18 <br> $75 </td>
+</tr>
+<tr>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+</tr>
+</tr>
+  <td>  <a href="#MM">Makers Mark</a>  </td>
+  <td> C </td>
+  <td> <a href="https://www.google.com/maps/place/Makers+Mark+Distillery/@37.7532248,-85.2432564,11.04z/data=!4m6!3m5!1s0x886846a4012edf35:0xdd663c3db5ee547b!8m2!3d37.6468674!4d-85.3489686!16s%2Fg%2F11c5rhl6ff" target="_blank">South Bardstown </a></td>
+  <td> Tour (75min) <br> Elevated tour (120min mon-fri 10am)</td>
+  <td> $22 <br> $55</td>
+</tr>
+</tr>
+  <td>  <a href="#HH">Heaven Hill</a>  </td>
+  <td> C </td>
+  <td> <a href="https://www.google.com/maps/place/Heaven+Hill+Bourbon+Experience/@37.7996161,-85.4163172,12.67z/data=!4m6!3m5!1s0x886851908c5bf7a7:0xf10d932a5cfcd5fc!8m2!3d37.7933076!4d-85.4657156!16s%2Fg%2F1tdf22r4" target="_blank">Bardstown </a></td>
+  <td> Tasting (45min) <br> Elevated tasting (45min) <br> Elevated tour (75min) <br> Warehouse tour (90min)</td>
+  <td> $18 <br> $25 <br> $40 <br> $35</td>
+</tr>
+</tr>
+  <td>  <a href="#Willet">Willet</a>  </td>
+  <td> C </td>
+  <td> <a href="https://www.google.com/maps/place/Willett+Distillery/@37.7766579,-85.4142361,12.4z/data=!4m6!3m5!1s0x886851bdac07ee73:0x43cbe5909977e72c!8m2!3d37.7847543!4d-85.4612866!16s%2Fg%2F1v6l86w3" target="_blank">Bardstown </a></td>
+  <td> Tasting (30min) <br> tour (60min) </td>
+  <td> $18 <br> $25 </td>
+</tr>
+</tr>
+  <td>  <a href="#FR2">Four Roses Bottling</a>  </td>
+  <td> C </td>
+  <td> <a href="https://www.google.com/maps/place/Four+Roses+Bottling+Facility/@37.9774823,-85.4102857,10.77z/data=!4m6!3m5!1s0x8869ac1555555555:0x8c9cebab0d033d3c!8m2!3d37.9214682!4d-85.5876856!16s%2Fg%2F11gzxld4g" target="_blank">North Bardstown </a></td>
+  <td> Tasting (45min) <br> tour (90min) </td>
+  <td> $16 <br> $22 </td>
+</tr>
+</tr>
+  <td>  <a href="#JB">Jim Beam</a>  </td>
+  <td> C </td>
+  <td> <a href="https://www.google.com/maps/place/James+B.+Beam+Distilling+Co./@37.945862,-85.5690025,11.04z/data=!4m6!3m5!1s0x886901aff214fe0f:0x6344565b40dec517!8m2!3d37.931145!4d-85.652424!16s%2Fg%2F11rrzll3q" target="_blank">North Bardstown </a></td>
+  <td> Tasting (20min) <br> tour (90min) <br> Elevated tasting (45min) <br> Elevated tasting 2 (60min) </td>
+  <td> $20 <br> $28 <br> $75 <br> $125 </td>
+</tr>
+</table>
+</div>
+
+<div class="column right-middle">
+  <img class="logo" src="figs/map.jpg" style="padding-top:60em;" alt="Map">
+</div>
+</div>
+
+<div class="row">
+    <div class="row" id="BT"> <h2><a href="https://www.buffalotracedistillery.com/visit-us.html">Buffalo Trace</a> </h2>
+      <div class="column left">
+      Buffalo trace (BT) has a few different tour options that are all free although some
+      are harder to get reservations for. BT sells a lot of coveted products like
+      (EH Taylor, Blantons, Eagle Rare, Weller SR), but they only sell one of those
+      each day, you can only buy one of each per 3 months, they and sell out fairly
+      early in the morning. We could tour one day and swing through another morning (9:30am)
+      to get a different bottle. I would recommend the Old Taylor or Hard Hat tours
+      if we can get them.
+      </div>
+      <div class="column middle">
+        <table align="center">
+          <b> <tr>
+            <th> Bottle </th>
+            <th> Pre-tax price </th>
+            <th> # allowed </th>
+            <th> Estimated likelihood? </th>
+          </tr> </b>
+        </tr>
+          <td> Buffalo Trace </td>
+          <td> ~$25.99 </td>
+          <td> one per day </td>
+          <td> 100% </td>
+        </tr>
+        </tr>
+          <td> Sazerac Rye </td>
+          <td> ~$25.99 </td>
+          <td> one per day </td>
+          <td> 100% </td>
+        </tr>
+        </tr>
+          <td> Blantons </td>
+          <td> ~$59.99 </td>
+          <td> one per 90 days </td>
+          <td> 30% </td>
+        </tr>
+        </tr>
+          <td> Weller Special Reserve </td>
+          <td> ~$25.99 </td>
+          <td> one per 90 days </td>
+          <td> 27% </td>
+        </tr>
+        </tr>
+          <td> E.H. Taylor </td>
+          <td> ~$43.99 </td>
+          <td> one per 90 days </td>
+          <td> 27% </td>
+        </tr>
+        </tr>
+          <td> Eagle Rare </td>
+          <td> ~$39.99 </td>
+          <td> one per 90 days </td>
+          <td> 16% </td>
+        </tr>
+        </table>
+    </div>
+  </div>
+
+    <div class="row" id="WR"> <h2><a href="https://www.buffalotracedistillery.com/visit-us.html">Woodford Reserve</a> </h2>
+      <div class="column left">
+      Woodford reserve is a pretty well known brand, although they don't have a full range
+      of products like buffalo trace or old forester. The tour is supposed to be pretty
+      good according to reddit based on the very modern and refined distillery. The tasting
+      might have one special bottle and depending on the time of year they may have their
+      master distiller series in the giftshop. Overall this tour is more on the distillery
+      than the whiskey.
+     </div>
+     <div class="column middle">
+       <table align="center">
+         <b> <tr>
+           <th> Bottle </th>
+           <th> Pre-tax price </th>
+           <th> # allowed </th>
+           <th> Estimated likelihood? </th>
+         </tr> </b>
+       </tr>
+         <td> Master Collection </td>
+         <td> ~$129.99 </td>
+         <td> one </td>
+         <td> &lt5% </td>
+       </tr>
+       </tr>
+         <td> Batch Proof </td>
+         <td> ~$129.99 </td>
+         <td> one </td>
+         <td> &lt5% </td>
+       </tr>
+       </table>
+   </div>
+ </div>
+
+    <div class="row" id="FR1"> <h2><a href="https://www.woodfordreserve.com/our-distillery/tour-our-distillery/">Four Roses Distillery</a> </h2>
+      Four roses has two locations, one where they distill (here) and one where they
+      store and bottle (near Jim beam). The tour is supposed to be ok and the tasting is
+      their readily available stuff (small batch, single barrel, small batch select).
+      The big thing is that they regularly (almost 50% of days) release their barrel strength
+      bottles in one of the gift shops and have those for sale for a few hours. These tend
+      to be some of the most highly rated bottles at their price (~$85). Outside of Buffalo
+      trace and heaven hill, four roses is the most likely to get an "allocated" bottle.
+     </div>
+
+    <div class="row" id="WT"> <h2><a href="https://www.buffalotracedistillery.com/visit-us.html">Wild Turkey</a> </h2>
+      Wild turkey (WT) is a hard one that may require us to make a later decision on. For
+      the last couple years they have been doing rennovations, so that there are no tours
+      and even their usual gift shop is closed with a pop-up bar/gift shop across the street.
+      When they were running this was a favorite tour because one of the master distillers often
+      met with the group, talked about all the details of WT and signed bottles/clothes.
+      If we want to swing through for an old fashioned, or try our luck for a rare bottle we can,
+      but they haven't announced when the tours will be open again. That being said,
+      they have good whiskey and Eric really enjoys them, so might be worth seeing
+      if we can get the master distiller to sign something!
+     </div>
+
+    <div class="row" id="3Boys"> <h2><a href="https://www.buffalotracedistillery.com/visit-us.html">Three Boys Farm</a> </h2>
+      Three boys farm is one of the small-time distilleries that everyone recommends
+      visiting in the area. They work with some other brands but most of their stuff is
+      single barrel, custom stuff. Their tour is supposed to be excellent with (5)
+      tastings right from the barrel, and you can buy your own bottle right from the barrels
+      tasted. Great if you want to support a small time distillery or try whiskey right
+      from the barrel.
+     </div>
+
+    <div class="row" id="OF"> <h2><a href="https://www.buffalotracedistillery.com/visit-us.html">Old Forester</a> </h2>
+      Old forester (OF) is the first from group B that is located in downtown Louisville.
+      This group has the benefit that everything is walkable and many of the elevated
+      tours give you highly desirable tastings. Old forester is supposedly a great tour
+      with a rich history and good tasting options. They randomly (10% of the time) have
+      their single barrels available for sale. Their elevated tour is expensive at $70,
+      but it includes tasting a single barrel and their birthday bourbon, which is one of
+      the most desirable bourbons on the market (and beats pappy in tastings). The elevated
+      tour is available most fridays and saturdays at 12:30 or 1:30pm, but sells out fast.
+     </div>
+
+    <div class="row" id="EW"> <h2><a href="https://www.buffalotracedistillery.com/visit-us.html">Evan Williams</a> </h2>
+      Evan williams is a change-up from most distilleries because Evan Williams is (mostly)
+      the budget brand for Heaven Hill. The way EW differentiates itself from other distilleries
+      is they have a speakeasy tour, which is essentially a tour through drinks with the bartender
+      giving you the history through tasting. Many people recommend this as a way to
+      break up the distillery tours that can become somewhat repetitive. They also sometimes
+      have evan williams 12 year (~$130) and 23 year ($??) but may require chatting up the
+      bartender/gift shop people.
+     </div>
+
+    <div class="row" id="Mich"> <h2><a href="https://www.buffalotracedistillery.com/visit-us.html">Michters</a> </h2>
+      Michters is another distillery right on this stretch of road and has become a premier
+      distillery. They have three tiers of tours, although only the basic and elevated
+      will likely work for our group. The elevated offers a substantially better tasting,
+      with (7) different drinks including three very high end samples. They will sometimes
+      have high-end bottles for sale, but it seems to be more luck than anything else, and
+      the price of their high end bottles starts high ($150+).
+     </div>
+
+    <div class="row" id="Peer"> <h2><a href="https://www.buffalotracedistillery.com/visit-us.html">Peerless</a> </h2>
+      Peerless is another less well-known distillery on the list. They have grown quickly
+      in the last year, although one thing holding them back is they don't really sell
+      anything under $60 and their branding is a bit low-tier. That being said, people rave
+      about their tour and their elevated tour, while expensive ($75), includes up to 10 samples
+      of anything they make. Their basic tour also gets great reviews and is right next to
+      the others in group B.
+     </div>
+
+    <div class="row" id="MM"> <h2><a href="https://www.buffalotracedistillery.com/visit-us.html">Makers Mark</a> </h2>
+      Makers mark is the first of the Bardstown group (c), and is reported to have a beautiful
+      grounds for touring. Its a little out of the way compared to other places around Bardstown but well liked.
+      Their elevated tours don't seem to be worth it, but you can often
+      find their better bottles in the gift shop ($~60-80).
+     </div>
+
+    <div class="row" id="HH"> <h2><a href="https://www.buffalotracedistillery.com/visit-us.html">Heaven Hill</a> </h2>
+      Heaven hill is a top brand when it comes to whiskey, with good bottles at every price point.
+      Their brands include Larceny, Elijah Craig, Henry Mckenna, and more that give them a wide range.
+      They are also one of the best tours, with the elevated "You do bourbon" tour including
+      a great tasting and the opportunity to buy a bottle of any of the tasting samples which
+      often includes a custom bottle or Larceny/Elijah Craig right from the barrel. I would
+      highly recommend we do this one.
+     </div>
+
+    <div class="row" id="Willet"> <h2><a href="https://www.buffalotracedistillery.com/visit-us.html">Willet</a> </h2>
+      Willet is just a mile or two from Heaven Hill and is a great compliment, with primarily Rye
+      whiskey as their offering. The tour is good, you have a chance at some of their allocated
+      products like they purple top bottles, and they take reservations for their restuarant. The
+      restuarant is considered the best food of all the distilleries so if we are in the area,
+      we should try to get lunch here!
+     </div>
+
+    <div class="row" id="FR2"> <h2><a href="https://www.buffalotracedistillery.com/visit-us.html">Four Roses Bottling</a> </h2>
+      This is the second four roses location where they do the warehousing and bottling. I haven't
+      heard too much about the tours but we again have a shot at getting a premium bottle at this location.
+      Tasting is exactly the same but obviously the tour focuses on what happens after
+      the whiskey is barreled.
+     </div>
+
+    <div class="row" id="JB"> <h2><a href="https://www.buffalotracedistillery.com/visit-us.html">Jim Beam</a> </h2>
+      Jim beam is often known for their name brand, but they are also the distillery for
+      Knob Creek and bookers.
+      Places special bottles throughout the store including KC12, KC15, and bookers. Seems
+      somewhat more available than other distilleries.
+     </div>
+
+     <div class="row" id="Other"> <h2>Other </h2>
+       We can also go to another distillery if anyone would like to. I picked the main ones,
+       but others like Angel's envy or other small distilleries are options too. Send me a text
+       or something if there is another place you want me to look into and recommend for the group.
+    </div>
+</div>
+
+<!-- <footer id="footer">
+  <span> </span>
+  <span><a href="https://twitter.com/Ryan_Dreifuerst"><i class="fab fa-twitter-square fa-3x"></i></a></span>
+  <span><a href="https://github.com/Ryandry1st"><i class="fab fa-github-square fa-3x"></i></a></span>
+  <span><a href="https://www.linkedin.com/in/ryandreifuerst"><i class="fab fa-linkedin fa-3x"></i></a></span>
+</footer> -->
+
+</div>
+</body>
+</html>
