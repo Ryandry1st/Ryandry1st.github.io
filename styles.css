@@ -133,6 +133,17 @@ img.logo2 {
   margin: auto;
 }
 
+img.logo3 {
+  position: absolute;
+  width: 80%;
+  top: 40%;
+  bottom: 0;
+  left: 0%;
+  right: 0;
+  margin: auto;
+  padding-top: 15em;
+}
+
 img.tutimg {
   width: 500px;
   display: block;
