@@ -35,14 +35,14 @@
             z-index: 1000;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
-        .logo { font-size: 1.2rem; font-weight: 800; color: var(--primary); }
+        .logo { font-size: 2.2rem; font-weight: 800; color: var(--primary); }
         .nav-links { display: flex; gap: 2rem; }
         .nav-links a { font-weight: 600; color: var(--primary); transition: color 0.3s ease; }
         .nav-links a:hover { color: var(--secondary); }
 
         /* Hero Section */
         header {
-            min-height: 100vh;
+            min-height: 90vh;
             display: flex;
             align-items: center;
             padding: 0 5%;
@@ -50,7 +50,7 @@
             color: var(--white);
             margin-top: 60px;
         }
-        .hero-content { max-width: 800px; }
+        .hero-content { max-width: 900px; }
         .hero-title { font-size: 4rem; font-weight: 800; line-height: 1.1; margin-bottom: 1rem; }
         .hero-title span { color: var(--accent); }
         .hero-subtitle { font-size: 1.5rem; font-weight: 300; margin-bottom: 2rem; color: #e0e0e0; }
@@ -140,8 +140,8 @@
 
     <header id="home">
         <div class="hero-content">
-            <h1 class="hero-title">Advancing the Future of <span>Wireless Networks</span></h1>
-            <p class="hero-subtitle">Machine Learning & Signal Processing for 5G, 6G, and Massive MIMO.</p>
+            <h1 class="hero-title">Advancing the Future of <span>Wireless Communications</span></h1>
+            <p class="hero-subtitle">Machine Learning, Signal Processing, and Digital Twins for Massive MIMO, 5G, and 6G networks</p>
             <a href="#publications" class="btn">View My Research</a>
         </div>
     </header>
@@ -150,21 +150,34 @@
         <h2 class="section-title">About Me</h2>
         <div class="about-grid">
             <div class="about-text">
-                <p>Hello! I am Dr. Ryan M. Dreifuerst. I recently successfully defended my PhD at <strong>North Carolina State University</strong> on March 20th. This marked the culmination of five years of research working alongside Prof. Robert W. Heath Jr. across both the University of Texas at Austin and NC State.</p>
-                <p>My core focus lies at the intersection of <strong>signal processing and machine learning</strong> for next-generation wireless communication networks. I am passionate about solving hardware and physical layer challenges in 5G and 6G systems.</p>
-                <p>I am thrilled to announce that I am beginning my post-graduate professional journey at <strong>MITRE</strong>.</p>
+                <p>I am Ryan M. Dreifuerst. My core focus lies at the intersection of <strong>signal processing and machine learning</strong> for next-generation wireless communication networks. I am passionate about solving physical layer challenges for 5G and 6G systems through domain-specific optimization.</p>
+                <p> I successfully defended my PhD at <strong>North Carolina State University</strong> on March 20th 2024. This marked the culmination of five years of research working alongside Prof. Robert W. Heath Jr. across both the University of Texas at Austin and NC State.</p>
+                <p>I am beginning my post graduate professional journey at <strong>MITRE</strong>.</p>
             </div>
             <div class="education">
                 <div class="education-card">
-                    <div class="edu-date">Completed March 2026</div>
+                    <div class="edu-date">March 2024</div>
                     <div class="edu-degree">Ph.D. in Electrical Engineering</div>
-                    <div class="edu-school">North Carolina State University / UT Austin</div>
-                    <p style="margin-top:0.5rem; font-size:0.9rem; color:#6b7c93;">Advisor: Prof. Robert W. Heath Jr.<br>Thesis: Machine-learning based codebook design for beam management.</p>
+                    <div class="edu-school">North Carolina State University</div>
+                    <p style="margin-top:0.5rem; font-size:0.9rem; color:#6b7c93;">Advisor: Prof. Robert W. Heath Jr.<br>Thesis: Machine-learning based codebook design for beam management</p>
                 </div>
                 <div class="education-card">
-                    <div class="edu-date">Upcoming</div>
-                    <div class="edu-degree">Post-Graduate Researcher</div>
-                    <div class="edu-school">MITRE</div>
+                    <div class="edu-date">Dec 2021</div>
+                    <div class="edu-degree">M.S. in Electrical Engineering</div>
+                    <div class="edu-school">The University of Texas at Austin</div>
+                    <p style="margin-top:0.5rem; font-size:0.9rem; color:#6b7c93;">Advisor: Prof. Robert W. Heath Jr.<br>Thesis: Low resolution sinusoid decomposition and estimation</p>
+                </div>
+				<div class="education-card">
+                    <div class="edu-date">May 2019</div>
+                    <div class="edu-degree">B.S. in Electrical Engineering</div>
+                    <div class="edu-school">Milwaukee School of Engineering</div>
+                    <p style="margin-top:0.5rem; font-size:0.9rem; color:#6b7c93;">GPA: 4.0</p>
+                </div>
+				<div class="education-card">
+                    <div class="edu-date">May 2019</div>
+                    <div class="edu-degree">B.S. in Electrical and Communications Engineering</div>
+                    <div class="edu-school">Technische Hochschule L&uuml;beck</div>
+                    <p style="margin-top:0.5rem; font-size:0.9rem; color:#6b7c93;">GPA: 4.0</p>
                 </div>
             </div>
         </div>
@@ -175,15 +188,15 @@
         <div class="research-grid">
             <div class="research-card">
                 <h3>Massive MIMO & Beam Management</h3>
-                <p>Innovating beamforming and codebook architectures to enable larger array sizes and handle extreme MIMO scenarios in sub-6 GHz and mmWave environments.</p>
+                <p>Innovating beamforming and codebook design to enable larger array sizes and optimize extreme MIMO for site-specific sub-6 GHz and mmWave environments.</p>
             </div>
             <div class="research-card">
                 <h3>Machine Learning for Wireless</h3>
-                <p>Leveraging deep learning, reinforcement learning, and neural networks to optimize coverage, capacity, resource scheduling, and carrier frequency offset estimation.</p>
+                <p>Leveraging deep learning, reinforcement learning, and neural networks to optimize coverage, capacity, resource scheduling, and signal analysis.</p>
             </div>
             <div class="research-card">
                 <h3>Next-Gen Signal Processing</h3>
-                <p>Developing low-resolution sinusoid decomposition and advanced CSI (Channel State Information) Type-II feedback mechanisms to reduce overhead and improve network efficiency.</p>
+                <p>Developing low-resolution signal decomposition and advanced CSI (Channel State Information) feedback mechanisms to reduce overhead and improve network efficiency.</p>
             </div>
         </div>
     </section>
@@ -230,7 +243,7 @@
 
     <footer id="contact">
         <h2>Let's Connect</h2>
-        <p style="margin-top: 1rem; color: #a0aec0;">Always interested in new opportunities and discussing exciting ideas in the wireless space.</p>
+        <p style="margin-top: 1rem; color: #a0aec0;">I am always interested in new opportunities and discussing exciting ideas in the AI for wireless space.</p>
         <div class="footer-links">
             <a href="https://github.com/ryandry1st" target="_blank">GitHub Profile</a>
             <a href="https://scholar.google.com/citations?user=FjKTS3gAAAAJ&hl=en" target="_blank">Google Scholar</a>
