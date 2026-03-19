@@ -1,95 +1,242 @@
 <!DOCTYPE html>
-<html>
-
-<div class="topnav">
-  <a class="active" href="/"><i class="fas fa-home"></i>  Home</a>
-  <a href="/undergrad"><i class="fas fa-user-graduate"></i>  Undergrad</a>
-  <a href="/graduate"><i class="fas fa-university"></i>  Graduate School</a>
-  <a href="/research"><i class="fab fa-leanpub"></i>  Research</a>
-  <!-- <a href="/activities"><i class="fas fa-football-ball"></i>  Activities</a> -->
-  <a href="/professional"><i class="fas fa-award"></i>  Resume/CV</a>
-  <a href="/contact"><i class="far fa-address-book"></i>  Contact</a>
-  <a href="/tutorials"><i class="fas fa-chalkboard-teacher"></i></i>  Tutorials</a>
-</div>
-
+<html lang="en">
 <head>
-  <script src="https://kit.fontawesome.com/9d2d5bf903.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Ryan M. Dreifuerst | Researcher in ML & Wireless Communications</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles & Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: #333; line-height: 1.6; background-color: #f8f9fa; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /* Color Palette */
+        :root {
+            --primary: #0A2540;
+            --secondary: #635BFF;
+            --accent: #00D4FF;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --text-muted: #6b7c93;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background: var(--white);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .logo { font-size: 1.2rem; font-weight: 800; color: var(--primary); }
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-links a { font-weight: 600; color: var(--primary); transition: color 0.3s ease; }
+        .nav-links a:hover { color: var(--secondary); }
+
+        /* Hero Section */
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+            background: linear-gradient(135deg, var(--primary) 0%, #113a63 100%);
+            color: var(--white);
+            margin-top: 60px;
+        }
+        .hero-content { max-width: 800px; }
+        .hero-title { font-size: 4rem; font-weight: 800; line-height: 1.1; margin-bottom: 1rem; }
+        .hero-title span { color: var(--accent); }
+        .hero-subtitle { font-size: 1.5rem; font-weight: 300; margin-bottom: 2rem; color: #e0e0e0; }
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--secondary);
+            color: var(--white);
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.3s ease, background 0.3s;
+        }
+        .btn:hover { background: #524add; transform: translateY(-3px); }
+
+        /* Section Wrappers */
+        section { padding: 6rem 5%; }
+        .section-title { font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 3rem; text-align: center; }
+
+        /* About & Education */
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1200px; margin: 0 auto; }
+        .about-text p { margin-bottom: 1.5rem; font-size: 1.1rem; color: #4a5568; }
+        .education-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--secondary);
+            margin-bottom: 1.5rem;
+        }
+        .edu-date { font-size: 0.9rem; color: var(--secondary); font-weight: 600; }
+        .edu-degree { font-size: 1.2rem; font-weight: 800; margin: 0.5rem 0; color: var(--primary); }
+        .edu-school { color: var(--text-muted); }
+
+        /* Research Areas */
+        .bg-white { background: var(--white); }
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .research-card {
+            padding: 2.5rem;
+            background: var(--light-bg);
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+        .research-card:hover { transform: translateY(-5px); background: var(--white); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .research-card h3 { font-size: 1.4rem; color: var(--primary); margin-bottom: 1rem; }
+        .research-card p { color: var(--text-muted); }
+
+        /* Publications */
+        .pub-list { max-width: 1000px; margin: 0 auto; }
+        .pub-item {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .pub-title { font-size: 1.2rem; font-weight: 600; color: var(--primary); margin-bottom: 0.5rem; }
+        .pub-authors { color: var(--text-muted); font-size: 0.95rem; }
+        .pub-venue { font-weight: 600; color: var(--secondary); font-size: 0.9rem; margin-top: 0.5rem; }
+        .highlight { background: #eef2ff; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.85rem; color: var(--secondary); }
+
+        /* Footer */
+        footer { background: var(--primary); color: var(--white); text-align: center; padding: 3rem 5%; }
+        .footer-links { display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; }
+        .footer-links a { color: var(--accent); font-weight: 600; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero-title { font-size: 3rem; }
+            .about-grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
-
 <body>
-  <div id="page-container">
-  <div style="text-align:center"><h1> Dr. Ryan M. Dreifuerst </h1></div>
-  <div class="row" style="padding:5px">
-    <div class="column left" style="padding-right:30px"> <img class="homeimg" src="figs/Headshot.jpg"> </div>
-    <div class="column middle" style="align:left;width:60%">
-      <p style="font-size:24px">
-        Thank you for your interest in my work. If you have any questions feel free to head over
-        to the contact page and send me an email.
-      </p>
-      <h3> Quick Summary </h3>
-      <p>
 
-        On March 20th I successfully defended my PhD at North Carolina State University!
-        This was the culmination of five years working with <a href="http://www.profheath.org/" target="_blank"> Prof. Robert W. Heath Jr</a>.
-        both at
-        <a href="https://www.utexas.edu/" target="_blank">
-          the University of Texas at Austin</a href> and
-          <a href="https://www.ncsu.edu/" target="_blank">
-            North Carolina State University</a href>.
+    <nav>
+        <div class="logo">Dr. Ryan M. Dreifuerst</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-          My research focuses on integrating signal processing and machine learning
-          for next generation wireless communication (5G, 6G). In particular,
-          my primary work has been on beam management, codebook design, and
-          feedback for massive MIMO. Feel free to
-          check out my <a href="https://ryandry1st.github.io/research">research</a>.
+    <header id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Advancing the Future of <span>Wireless Networks</span></h1>
+            <p class="hero-subtitle">Machine Learning & Signal Processing for 5G, 6G, and Massive MIMO.</p>
+            <a href="#publications" class="btn">View My Research</a>
+        </div>
+    </header>
 
-          If you want to see some of my projects in general head over to my
-          <a href="https://github.com/Ryandry1st" target="_blank">github profile</a>.
-      </p>
-      <p>
-        If you want to get to know more about me, feel free to look through some
-        of the things I have done during my <a href="https://ryandry1st.github.io/undergrad">
-          undergraduate studies</a>, <a href="https://ryandry1st.github.io/graduate">
-            graduate studies</a> or connect with me on social media.
-      </p>
-    <p>
-      Finally, if you are interested in a professional setting, head over to
-        my <a href="/professional">Resume/CV page</a> to see if we could connect professionally.
-      If so, make sure to <a href="/contact">reach out to me</a>. I am always interested in opportunities
-      and talking about new and exciting ideas!
-    </p>
-    <p>
-    </br>
-      <div style="text-align:center"><b> Recent Updates </b></div>
-      <ul>
-        <li> I will be presenting my paper on filtering for cluttered propagation modeling at IEEE AP-S/URSI 2025</li>
-        <li> I will be starting my post graduate employment at <a href="https://www.mitre.org/">MITRE</a> </li>
-        <li> I successfully defend my thesis on machine-learning based codebook design for beam management! </li>
-        <li> Read our paper submitted to IEEE Communication Magazine on beam management in 5G on arxiv <a href="https://arxiv.org/abs/2301.13390">[paper].</a></li>
-        <!-- <li> I accepted an internship offer to work with Samsung Research America on ML in 5G-advanced/6G for Summer 2022. </li> -->
-        <!-- <li> Our work on ML-assisted codebook design for sub-6GHz beam management was accepted at VTC 2022.
-          Read it on arxiv now  <a href="https://arxiv.org/abs/2204.06064">[paper].</a></li> -->
-        <!-- <li> I am headed to NC State to continue my PhD with Prof. Robert Heath. </li> -->
-        <!-- <li> I advanced to PhD candidacy at UT Austin and will be working heavily on ML-assisted Massive MIMO for the next season. </li> -->
-        <!-- <li> I accepted an internship offer to work with Qualcomm on 5G NR for Summer 2021. </li> -->
-        <!-- <li> Our paper, "Optimizing Coverage and Capacity in Cellular Networks using Machine Learning",
-             was accepted at ICASSP 2021. You can read it on arxiv now
-             <a href="https://arxiv.org/abs/2010.13710">[paper].</a></li> -->
-        <!-- <li> I presented our working on learnable synchronization pilot sequences at Asilomar 2021. </li> -->
-    </p>
-    </div>
-  </div>
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>Hello! I am Dr. Ryan M. Dreifuerst. I recently successfully defended my PhD at <strong>North Carolina State University</strong> on March 20th. This marked the culmination of five years of research working alongside Prof. Robert W. Heath Jr. across both the University of Texas at Austin and NC State.</p>
+                <p>My core focus lies at the intersection of <strong>signal processing and machine learning</strong> for next-generation wireless communication networks. I am passionate about solving hardware and physical layer challenges in 5G and 6G systems.</p>
+                <p>I am thrilled to announce that I am beginning my post-graduate professional journey at <strong>MITRE</strong>.</p>
+            </div>
+            <div class="education">
+                <div class="education-card">
+                    <div class="edu-date">Completed March 2026</div>
+                    <div class="edu-degree">Ph.D. in Electrical Engineering</div>
+                    <div class="edu-school">North Carolina State University / UT Austin</div>
+                    <p style="margin-top:0.5rem; font-size:0.9rem; color:#6b7c93;">Advisor: Prof. Robert W. Heath Jr.<br>Thesis: Machine-learning based codebook design for beam management.</p>
+                </div>
+                <div class="education-card">
+                    <div class="edu-date">Upcoming</div>
+                    <div class="edu-degree">Post-Graduate Researcher</div>
+                    <div class="edu-school">MITRE</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="research" class="bg-white">
+        <h2 class="section-title">Research Focus</h2>
+        <div class="research-grid">
+            <div class="research-card">
+                <h3>Massive MIMO & Beam Management</h3>
+                <p>Innovating beamforming and codebook architectures to enable larger array sizes and handle extreme MIMO scenarios in sub-6 GHz and mmWave environments.</p>
+            </div>
+            <div class="research-card">
+                <h3>Machine Learning for Wireless</h3>
+                <p>Leveraging deep learning, reinforcement learning, and neural networks to optimize coverage, capacity, resource scheduling, and carrier frequency offset estimation.</p>
+            </div>
+            <div class="research-card">
+                <h3>Next-Gen Signal Processing</h3>
+                <p>Developing low-resolution sinusoid decomposition and advanced CSI (Channel State Information) Type-II feedback mechanisms to reduce overhead and improve network efficiency.</p>
+            </div>
+        </div>
+    </section>
 
+    <section id="publications">
+        <h2 class="section-title">Selected Publications</h2>
+        <div class="pub-list">
+            
+            <div class="pub-item">
+                <div class="pub-title">Neural codebook design for MIMO network beam management</div>
+                <div class="pub-authors">RM Dreifuerst, RW Heath</div>
+                <div class="pub-venue">IEEE Transactions on Wireless Communications <span class="highlight">2025</span></div>
+            </div>
 
-  <footer id="footer">
-    <span> </span>
-    <span><a href="https://twitter.com/Ryan_Dreifuerst"><i class="fab fa-twitter-square fa-3x"></i></a></span>
-    <span><a href="https://github.com/Ryandry1st"><i class="fab fa-github-square fa-3x"></i></a></span>
-    <span><a href="https://www.linkedin.com/in/ryandreifuerst"><i class="fab fa-linkedin fa-3x"></i></a></span>
-  </footer>
+            <div class="pub-item">
+                <div class="pub-title">Hierarchical ML codebook design for extreme MIMO beam management</div>
+                <div class="pub-authors">RM Dreifuerst, RW Heath</div>
+                <div class="pub-venue">IEEE Transactions on Machine Learning in Communications and Networking <span class="highlight">2024</span></div>
+            </div>
 
-</div>
+            <div class="pub-item">
+                <div class="pub-title">Massive MIMO in 5G: How beamforming, codebooks, and feedback enable larger arrays</div>
+                <div class="pub-authors">RM Dreifuerst, RW Heath</div>
+                <div class="pub-venue">IEEE Communications Magazine <span class="highlight">2023 (90+ Citations)</span></div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">Optimizing coverage and capacity in cellular networks using machine learning</div>
+                <div class="pub-authors">RM Dreifuerst, S Daulton, Y Qian, P Varkey, M Balandat, S Kasturia...</div>
+                <div class="pub-venue">ICASSP <span class="highlight">2021 (115+ Citations)</span></div>
+            </div>
+            
+            <div class="pub-item">
+                <div class="pub-title">Deep learning-based carrier frequency offset estimation with one-bit ADCs</div>
+                <div class="pub-authors">RM Dreifuerst, RW Heath, MN Kulkarni, J Charlie</div>
+                <div class="pub-venue">IEEE 21st International Workshop on Signal Processing Advances (SPAWC) <span class="highlight">2020</span></div>
+            </div>
+
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="https://scholar.google.com/citations?user=FjKTS3gAAAAJ&hl=en" target="_blank" class="btn" style="background: var(--primary);">View Full Google Scholar</a>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Let's Connect</h2>
+        <p style="margin-top: 1rem; color: #a0aec0;">Always interested in new opportunities and discussing exciting ideas in the wireless space.</p>
+        <div class="footer-links">
+            <a href="https://github.com/ryandry1st" target="_blank">GitHub Profile</a>
+            <a href="https://scholar.google.com/citations?user=FjKTS3gAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        </div>
+        <p style="margin-top: 3rem; font-size: 0.8rem; color: #718096;">&copy; 2026 Dr. Ryan M. Dreifuerst. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>

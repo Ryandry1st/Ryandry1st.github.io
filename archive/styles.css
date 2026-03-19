@@ -1,0 +1,212 @@
+div.row {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #007fff;
+  color: white;
+}
+
+/* Background color */
+body {
+  background-color: #f7f8fc;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 20%;
+  padding-left: 50px;
+  padding-right: 0px;
+  position: relative;
+}
+
+.right {
+  padding-left: 10px;
+  width: 25%;
+  position: relative;
+}
+
+.middle {
+  width: 46%;
+  float: center;
+}
+.left-middle {
+  position: relative;
+  width: 48%;
+  vertical-align: middle;
+}
+.right-middle{
+  position: relative;
+  width: 45%;
+  vertical-align: bottom;
+}
+
+.row:after {
+  position: relative;
+  content: "";
+  display: table;
+  clear: both;
+  padding: 20px;
+  padding-bottom:80px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+/*
+@media screen and (max-width: 600px) {
+  .column.left, .column.middle, .column.right {
+    width: 95%;
+  }
+}
+*/
+
+th, td {
+  text-align: center;
+  padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+li {
+  padding: 10px;
+  font-size: 18px;
+}
+
+img.logo {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  bottom: 0;
+  left: 15%;
+  right: 0;
+  margin: auto;
+  padding-right: 20px;
+}
+
+img.logo2 {
+  position: absolute;
+  width: 30%;
+  top: 30%;
+  bottom: 0;
+  left: -10%;
+  right: 0;
+  margin: auto;
+}
+
+img.logo3 {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  bottom: 0;
+  left: 0%;
+  right: 0;
+  margin: auto;
+  padding-top: 15em;
+  padding-bottom: 15em;
+}
+
+img.tutimg {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.homeimg {
+  width: 100%;
+}
+
+.fa-twitter-square {
+  color: #1DA1F2;
+}
+
+.fa-github-square {
+  color: #24292e;
+}
+
+.fa-linkedin {
+  color: #2867B2;
+}
+
+.fa-kaggle {
+  color: #008abc;
+}
+
+
+span{
+  padding: 10px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #white;
+  color: #007fff;
+  text-align: right;
+  align-items: right;
+  height: 2.5rem;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+  text-align: right;
+  align-items: right;
+}
+
+#footer {
+  position: fixed;
+  float: right;
+  bottom: 0;
+  width: 98%;
+  height: 3.5rem;            /* Footer height */
+  align-items: right;
+  text-align: right;
+}
